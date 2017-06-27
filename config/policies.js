@@ -19,45 +19,56 @@
 
 module.exports.policies = {
 
-  /***************************************************************************
-   *                                                                          *
-   * Default policy for all controllers and actions (`true` allows public     *
-   * access)                                                                  *
-   *                                                                          *
-   ***************************************************************************/
+    /***************************************************************************
+     *                                                                          *
+     * Default policy for all controllers and actions (`true` allows public     *
+     * access)                                                                  *
+     *                                                                          *
+     ***************************************************************************/
 
-  '*'           : ['log', 'verifyToken', 'ensureToken', 'ensureOwnership'],
-  ListController: {
-    create: ['verifyToken', 'ensureToken', 'setOwner']
-  },
-  TodoController: {
-    create: ['verifyToken', 'ensureToken', 'setOwner']
-  },
-  AuthController: {
-    login: true
-  },
-  CountController: {
-    count: ['verifyToken', 'ensureToken', 'setOwner']
-  }
+    '*': ['log', 'verifyToken', 'ensureToken', 'ensureOwnership'],
+    ListController: {
+        create: ['verifyToken', 'ensureToken', 'setOwner']
+    },
+    TodoController: {
+        create: ['verifyToken', 'ensureToken', 'setOwner']
+    },
+    AuthController: {
+        login: true
+    },
+    CountController: {
+        count: ['verifyToken', 'ensureToken', 'setOwner']
+    },
+    GetUserController: {
+        signin: true,
+        analyzePreAuthUser: true,
+        analyzeUser: true,
+        challengePreAuthUser: true,
+        challengeUser: ['verifyToken', 'ensureToken', 'setOwner'],
+        authenticatePreAuthUser: true,
+        authenticateUser: ['verifyToken', 'ensureToken', 'setOwner'],
+        getPreAuthUser: true,
+        getUser: ['verifyToken', 'ensureToken', 'setOwner']
+    }
 
-  /***************************************************************************
-   *                                                                          *
-   * Here's an example of mapping some policies to run before a controller    *
-   * and its actions                                                          *
-   *                                                                          *
-   ***************************************************************************/
-  // RabbitController: {
+    /***************************************************************************
+     *                                                                          *
+     * Here's an example of mapping some policies to run before a controller    *
+     * and its actions                                                          *
+     *                                                                          *
+     ***************************************************************************/
+    // RabbitController: {
 
-  // Apply the `false` policy as the default for all of RabbitController's actions
-  // (`false` prevents all access, which ensures that nothing bad happens to our rabbits)
-  // '*': false,
+    // Apply the `false` policy as the default for all of RabbitController's actions
+    // (`false` prevents all access, which ensures that nothing bad happens to our rabbits)
+    // '*': false,
 
-  // For the action `nurture`, apply the 'isRabbitMother' policy
-  // (this overrides `false` above)
-  // nurture	: 'isRabbitMother',
+    // For the action `nurture`, apply the 'isRabbitMother' policy
+    // (this overrides `false` above)
+    // nurture	: 'isRabbitMother',
 
-  // Apply the `isNiceToAnimals` AND `hasRabbitFood` policies
-  // before letting any users feed our rabbits
-  // feed : ['isNiceToAnimals', 'hasRabbitFood']
-  // }
+    // Apply the `isNiceToAnimals` AND `hasRabbitFood` policies
+    // before letting any users feed our rabbits
+    // feed : ['isNiceToAnimals', 'hasRabbitFood']
+    // }
 };

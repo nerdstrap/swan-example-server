@@ -198,8 +198,114 @@
         "email": null,
         "password": "$2a$10$Zy.D1BuzkOvzyhGHhlw4MeaADmtKyyUwaYkpg8VhYKxA33tX/XDhW",
         "createdAt": "2016-07-27T13:12:23.505Z",
-        "updatedAt": "2016-07-27T13:12:23.505Z",
-        "id": 3
+        "updatedAt": "2017-04-26T18:51:07.255Z",
+        "id": 3,
+        "sessionId": "_sessionId",
+        "transactionId": "_transactionId",
+        "userId": "example",
+        "deviceRequest": {
+          "devicePrint": "version%3D3%2E5%2E0%5F1%26pm%5Ffpua%3Dmozilla%2F5%2E0%20%28macintosh%3B%20intel%20mac%20os%20x%2010%5F11%5F6%29%20applewebkit%2F537%2E36%20%28khtml%2C%20like%20gecko%29%20chrome%2F57%2E0%2E2987%2E133%20safari%2F537%2E36%7C5%2E0%20%28Macintosh%3B%20Intel%20Mac%20OS%20X%2010%5F11%5F6%29%20AppleWebKit%2F537%2E36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F57%2E0%2E2987%2E133%20Safari%2F537%2E36%7CMacIntel%26pm%5Ffpsc%3D24%7C1440%7C900%7C873%26pm%5Ffpsw%3D%26pm%5Ffptz%3D%2D5%26pm%5Ffpln%3Dlang%3Den%2DUS%7Csyslang%3D%7Cuserlang%3D%26pm%5Ffpjv%3D0%26pm%5Ffpco%3D1%26pm%5Ffpasw%3Dmhjfbmdgcfjbbpaeojofohoefgiehjai%7Cwidevinecdmadapter%7Cpepperflashplayer%7Cinternal%2Dnacl%2Dplugin%7Cinternal%2Dpdf%2Dviewer%26pm%5Ffpan%3DNetscape%26pm%5Ffpacn%3DMozilla%26pm%5Ffpol%3Dtrue%26pm%5Ffposp%3D%26pm%5Ffpup%3D%26pm%5Ffpsaw%3D1440%26pm%5Ffpspd%3D24%26pm%5Ffpsbd%3D%26pm%5Ffpsdx%3D%26pm%5Ffpsdy%3D%26pm%5Ffpslx%3D%26pm%5Ffpsly%3D%26pm%5Ffpsfse%3D%26pm%5Ffpsui%3D%26pm%5Fos%3DMac%26pm%5Fbrmjv%3D57%26pm%5Fbr%3DChrome%26pm%5Finpt%3D%26pm%5Fexpt%3D",
+          "deviceTokenCookie": "_deviceTokenCookie",
+          "deviceTokenFSO": "_deviceTokenCookie",
+          "httpAccept": null,
+          "httpAcceptChars": null,
+          "httpAcceptEncoding": null,
+          "httpAcceptLanguage": null,
+          "httpReferrer": null,
+          "ipAddress": null,
+          "userAgent": null
+        },
+        "challengeQuestionAnswers": [
+          {
+            "challengeQuestionId": "Q2.9",
+            "challengeQuestionText": "In what city is your vacation home? (Enter full name of city only)",
+            "userAnswerText": "fads"
+          },
+          {
+            "challengeQuestionId": "Q2.5",
+            "challengeQuestionText": "What was the name of your first girlfriend/boyfriend?",
+            "userAnswerText": "fads"
+          },
+          {
+            "challengeQuestionId": "Q1.10",
+            "challengeQuestionText": "In what city were you married? (Enter full name of city)",
+            "userAnswerText": "fads"
+          },
+          {
+            "challengeQuestionId": "Q3.1",
+            "challengeQuestionText": "In what city was your mother born? (Enter full name of city only)",
+            "userAnswerText": "fads"
+          },
+          {
+            "challengeQuestionId": "Q1.1",
+            "challengeQuestionText": "In what city was your high school? (full name of city only)",
+            "userAnswerText": "fads"
+          }
+        ],
+        "credentialType": "SMS",
+        "contactInfo": "16143239560",
+        "label": "16143239560",
+        "isDefault": true,
+        "contactType": "Phone",
+        "verified": true,
+        "hasActiveToken": false
+      },
+      {
+        "username": "sample",
+        "email": null,
+        "password": "$2a$10$Zy.D1BuzkOvzyhGHhlw4MeaADmtKyyUwaYkpg8VhYKxA33tX/XDhW",
+        "createdAt": "2016-07-27T13:12:23.505Z",
+        "updatedAt": "2017-04-26T18:51:07.255Z",
+        "id": 4,
+        "sessionId": "_sessionId",
+        "transactionId": "_transactionId",
+        "userId": "enroll",
+        "deviceRequest": {
+          "devicePrint": "version%3D3%2E5%2E0%5F1%26pm%5Ffpua%3Dmozilla%2F5%2E0%20%28macintosh%3B%20intel%20mac%20os%20x%2010%5F11%5F6%29%20applewebkit%2F537%2E36%20%28khtml%2C%20like%20gecko%29%20chrome%2F57%2E0%2E2987%2E133%20safari%2F537%2E36%7C5%2E0%20%28Macintosh%3B%20Intel%20Mac%20OS%20X%2010%5F11%5F6%29%20AppleWebKit%2F537%2E36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F57%2E0%2E2987%2E133%20Safari%2F537%2E36%7CMacIntel%26pm%5Ffpsc%3D24%7C1440%7C900%7C873%26pm%5Ffpsw%3D%26pm%5Ffptz%3D%2D5%26pm%5Ffpln%3Dlang%3Den%2DUS%7Csyslang%3D%7Cuserlang%3D%26pm%5Ffpjv%3D0%26pm%5Ffpco%3D1%26pm%5Ffpasw%3Dmhjfbmdgcfjbbpaeojofohoefgiehjai%7Cwidevinecdmadapter%7Cpepperflashplayer%7Cinternal%2Dnacl%2Dplugin%7Cinternal%2Dpdf%2Dviewer%26pm%5Ffpan%3DNetscape%26pm%5Ffpacn%3DMozilla%26pm%5Ffpol%3Dtrue%26pm%5Ffposp%3D%26pm%5Ffpup%3D%26pm%5Ffpsaw%3D1440%26pm%5Ffpspd%3D24%26pm%5Ffpsbd%3D%26pm%5Ffpsdx%3D%26pm%5Ffpsdy%3D%26pm%5Ffpslx%3D%26pm%5Ffpsly%3D%26pm%5Ffpsfse%3D%26pm%5Ffpsui%3D%26pm%5Fos%3DMac%26pm%5Fbrmjv%3D57%26pm%5Fbr%3DChrome%26pm%5Finpt%3D%26pm%5Fexpt%3D",
+          "deviceTokenCookie": "_deviceTokenCookie",
+          "deviceTokenFSO": "_deviceTokenCookie",
+          "httpAccept": null,
+          "httpAcceptChars": null,
+          "httpAcceptEncoding": null,
+          "httpAcceptLanguage": null,
+          "httpReferrer": null,
+          "ipAddress": null,
+          "userAgent": null
+        },
+        "challengeQuestionAnswers": [
+          {
+            "challengeQuestionId": "Q2.9",
+            "challengeQuestionText": "In what city is your vacation home? (Enter full name of city only)",
+            "userAnswerText": "fads"
+          },
+          {
+            "challengeQuestionId": "Q2.5",
+            "challengeQuestionText": "What was the name of your first girlfriend/boyfriend?",
+            "userAnswerText": "fads"
+          },
+          {
+            "challengeQuestionId": "Q1.10",
+            "challengeQuestionText": "In what city were you married? (Enter full name of city)",
+            "userAnswerText": "fads"
+          },
+          {
+            "challengeQuestionId": "Q3.1",
+            "challengeQuestionText": "In what city was your mother born? (Enter full name of city only)",
+            "userAnswerText": "fads"
+          },
+          {
+            "challengeQuestionId": "Q1.1",
+            "challengeQuestionText": "In what city was your high school? (full name of city only)",
+            "userAnswerText": "fads"
+          }
+        ],
+        "credentialType": "SMS",
+        "contactInfo": "16143239560",
+        "label": "16143239560",
+        "isDefault": true,
+        "contactType": "Phone",
+        "verified": true,
+        "hasActiveToken": false
       }
     ]
   },
@@ -290,7 +396,7 @@
       "id": 17
     },
     "user": {
-      "id": 3
+      "id": 4
     }
   }
 }

@@ -22,26 +22,41 @@
 
 module.exports.routes = {
 
-  /***************************************************************************
-  *                                                                          *
-  * Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, *
-  * etc. depending on your default view engine) your home page.              *
-  *                                                                          *
-  * (Alternatively, remove this and add an `index.html` file in your         *
-  * `assets` directory)                                                      *
-  *                                                                          *
-  ***************************************************************************/
+    /***************************************************************************
+     *                                                                          *
+     * Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, *
+     * etc. depending on your default view engine) your home page.              *
+     *                                                                          *
+     * (Alternatively, remove this and add an `index.html` file in your         *
+     * `assets` directory)                                                      *
+     *                                                                          *
+     ***************************************************************************/
 
-  /***************************************************************************
-  *                                                                          *
-  * Custom routes here...                                                    *
-  *                                                                          *
-  * If a request to a URL doesn't match any of the custom routes above, it   *
-  * is matched against Sails route blueprints. See `config/blueprints.js`    *
-  * for configuration options and examples.                                  *
-  *                                                                          *
-  ***************************************************************************/
+    /***************************************************************************
+     *                                                                          *
+     * Custom routes here...                                                    *
+     *                                                                          *
+     * If a request to a URL doesn't match any of the custom routes above, it   *
+     * is matched against Sails route blueprints. See `config/blueprints.js`    *
+     * for configuration options and examples.                                  *
+     *                                                                          *
+     ***************************************************************************/
 
-  'GET /:modelName/count': 'CountController.count'
+    'GET /:modelName/count': 'CountController.count',
+    'POST /user/signin': 'GetUserController.signin',
+    'POST /user/analyzepreauthuser': 'GetUserController.analyzePreAuthUser',
+    'POST /user/analyzeuser': 'GetUserController.analyzeUser',
+    'POST /user/challengepreauthuser': 'GetUserController.challengePreAuthUser',
+    'POST /user/challengeuser': 'GetUserController.challengeUser',
+    'POST /user/authenticatepreauthuser': 'GetUserController.authenticatePreAuthUser',
+    'POST /user/authenticateuser': 'GetUserController.authenticateUser',
+    'POST /user/getpreauthuser': 'GetUserController.getPreAuthUser',
+    'POST /user/getuser': 'GetUserController.getUser',
+    'POST /user/addchallengequestionanswers': 'GetUserController.addChallengeQuestionAnswers',
+    'POST /user/verifycontactinfo': 'GetUserController.verifyContactInfo',
+    'POST /user/removecontactinfo': 'GetUserController.removeContactInfo',
+    'POST /user/binddevice': 'GetUserController.bindDevice',
+    'POST /user/updatecredentials': 'GetUserController.updateCredentials',
+    'POST /user/unlockuser': 'GetUserController.unlockUser'
 
 };

@@ -17,28 +17,28 @@
 
 module.exports = function badRequest(data, details) {
 
-  // Get access to `req`, `res`, & `sails`
-  var req = this.req;
-  var res = this.res;
-  var sails = req._sails;
+    // Get access to `req`, `res`, & `sails`
+    let req = this.req;
+    let res = this.res;
+    let sails = req._sails;
 
-  details = details || null;
+    details = details || null;
 
-  // Set status code
-  res.status(400);
+    // Set status code
+    res.status(400);
 
-  // Log error to console
-  if (data !== undefined) {
-    sails.log.verbose('Sending 400 ("Bad Request") response: \n',data);
-  }
-  else sails.log.verbose('Sending 400 ("Bad Request") response');
+    // Log error to console
+    if (data !== undefined) {
+        sails.log.verbose('Sending 400 ("Bad Request") response: \n', data);
+    }
+    else sails.log.verbose('Sending 400 ("Bad Request") response');
 
-  // Only include errors in response if application environment
-  // is not set to 'production'.  In production, we shouldn't
-  // send back any identifying information about errors.
-  if (sails.config.environment === 'production' && typeof data !== 'string') {
-    data = undefined;
-  }
+    // Only include errors in response if application environment
+    // is not set to 'production'.  In production, we shouldn't
+    // send back any identifying information about errors.
+    if (sails.config.environment === 'production' && typeof data !== 'string') {
+        data = undefined;
+    }
 
-  return res.json({error: data, details: details});
+    return res.json({error: data, details: details});
 };

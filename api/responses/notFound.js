@@ -17,29 +17,29 @@
  * automatically.
  */
 
-module.exports = function notFound (data, options) {
+module.exports = function notFound(data, options) {
 
-  // Get access to `req`, `res`, & `sails`
-  var req = this.req;
-  var res = this.res;
-  var sails = req._sails;
+    // Get access to `req`, `res`, & `sails`
+    let req = this.req;
+    let res = this.res;
+    let sails = req._sails;
 
-  // Set status code
-  res.status(404);
+    // Set status code
+    res.status(404);
 
-  // Log error to console
-  if (data !== undefined) {
-    sails.log.verbose('Sending 404 ("Not Found") response: \n',data);
-  }
-  else sails.log.verbose('Sending 404 ("Not Found") response');
+    // Log error to console
+    if (data !== undefined) {
+        sails.log.verbose('Sending 404 ("Not Found") response: \n', data);
+    }
+    else sails.log.verbose('Sending 404 ("Not Found") response');
 
-  // Only include errors in response if application environment
-  // is not set to 'production'.  In production, we shouldn't
-  // send back any identifying information about errors.
-  if (sails.config.environment === 'production') {
-    data = undefined;
-  }
+    // Only include errors in response if application environment
+    // is not set to 'production'.  In production, we shouldn't
+    // send back any identifying information about errors.
+    if (sails.config.environment === 'production') {
+        data = undefined;
+    }
 
-  return res.json({error: data});
+    return res.json({error: data});
 };
 

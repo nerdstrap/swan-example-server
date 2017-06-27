@@ -1,4 +1,4 @@
-var bcrypt = require('bcrypt');
+let bcrypt = require('bcrypt');
 
 module.exports = {
   attributes  : {
@@ -9,7 +9,7 @@ module.exports = {
       via       : 'user'
     },
     toJSON  : function() {
-      var values = this.toObject();
+      let values = this.toObject();
 
       delete values.password;
 

@@ -11,17 +11,17 @@
  *          - pass string to render specified view
  */
 
-module.exports = function sendOK (data, options) {
+module.exports = function sendOK(data, options) {
 
-  // Get access to `req`, `res`, & `sails`
-  var req = this.req;
-  var res = this.res;
-  var sails = req._sails;
+    // Get access to `req`, `res`, & `sails`
+    let req = this.req;
+    let res = this.res;
+    let sails = req._sails;
 
-  sails.log.silly('res.ok() :: Sending 200 ("OK") response');
+    sails.log.silly('res.ok() :: Sending 200 ("OK") response');
 
-  // Set status code
-  res.status(200);
+    // Set status code
+    res.status(200);
 
-  return res.json(data);
+    return res.json(data);
 };

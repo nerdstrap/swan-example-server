@@ -1,5 +1,5 @@
 module.exports = {
-  jwt       : {
-    secret: process.env.JWT_SECRET || 'superSecretForDev'
-  }
+    jwt: {
+        secret: process.env.JWT_SECRET || 'superSecretForDev'
+    }
 };
